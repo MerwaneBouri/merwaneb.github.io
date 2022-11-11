@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("font/font-ligth.woff") format("woff")
+}
+
+html {
+    color: rgba(0, 0, 0, 0.89);
+    background-color: #ffffff;
+}
+
+body {
+    font-family: "Roboto", serif;
+    text-align: justify;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    max-width: 850px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5em 0;
+    line-height: 1.33
+}
+
+h1:after, h2:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: .33em;
+}
+
+a {
+    color: #0b7cc0;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin: 15px auto;
+    max-width: 850px;
+    max-height: 400px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.return-btn {
+    padding: .5em 3em;
+    background-color: #020202;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid black 1px;
+    transition: background-color 200ms, color 200ms;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+@media only screen and (max-width: 500px){
+    .return-btn {
+        position: sticky;
+        display: block;
+        text-align: center;
+    }
+    body {
+        font-family: "Roboto", serif;
+        margin-bottom: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 0;
+        max-width: 100%;
+    }
+    h1 {
+        text-align: left;
+    }
+    img {
+        display: block;
+        margin: 15px auto;
+        width: 300px;
+    }
+}
+.return-btn:hover {
+    font-weight: normal;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.twitter {
+    color: #1DA1F2
+}
+
+.citation {
+    color: #7e7e7e;
+    border-left: 1px solid #7e7e7e;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+}
+
+.problem {
+    margin: 0.5em 0;
+    background-color: #f6f6f6;
+    padding: .5em;
+    color: #363636;
+    font-weight: bold;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.no-italic {
+    font-style: normal;
+}
